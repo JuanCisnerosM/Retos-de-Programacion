@@ -1,2 +1,2 @@
-Este es un espacio donde ralizar diferentes tipos de retos y ejercicios, en diferentes tipos de lenguajes,
+Este es un espacio donde ralizar retos y ejercicios, en diferentes lenguajes de programación
 :)
