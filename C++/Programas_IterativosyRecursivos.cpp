@@ -109,7 +109,7 @@ void Menu(){
 }
 
 void NumPrimoIterativo(){
-    int n = 6;
+    int n = 6; // Se ingresa el numero manualmente. El numero a evaluar si es primo
     int divisor = 2;
     int residuo = 0;
     int cociente = 0;
@@ -128,7 +128,7 @@ void NumPrimoIterativo(){
 
 
 void FactorialIterativo(){
-    int n = 10, fact = 1, i;
+    int n = 10, fact = 1, i; // Se ingresa el numero manualmente. El numero a calcular su factorial
     for(i = 1; i <= n; i++ )
     fact = fact * i;
     printf("El factorial de %d = %d", n, fact);
@@ -136,7 +136,7 @@ void FactorialIterativo(){
 }
 
 void ConversionDec_BinIterativo(){
-    int bin[10];
+    int bin[10]; // Se ingresa el numero manualmente. El numero a convertir a binario
     int i = 0, num, divisor2, cociente, residuo;
     num = 18;
     divisor2 = 2;
