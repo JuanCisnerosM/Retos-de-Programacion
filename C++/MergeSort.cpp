@@ -1,7 +1,6 @@
-/*
-	Equipo 5
-*/
-
+// MergeSort.cpp
+// Implementacion del algoritmo de ordenamiento MergeSort en C
+// El algoritmo de ordenamiento MergeSort es un algoritmo de ordenamiento recursivo que divide la lista en mitades sucesivas, las ordena y las fusiona.
 #include<stdio.h>
 #include<stdlib.h>
 
