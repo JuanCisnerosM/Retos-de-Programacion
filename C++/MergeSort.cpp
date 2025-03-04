@@ -42,7 +42,7 @@ void mergesort(int a[],int low,int high)
 // Funcion main
 int main()
 {
-	int a[7] = {83, 20, 9, 50, 115, 61, 17};
+	int a[7] = {843, 240, 829, 530, 115, 621, 111};
 	int n = 7;
 
 	mergesort(a, 0, n-1);	//Llamada al metodo pasando los parametros declarados anteriormente
