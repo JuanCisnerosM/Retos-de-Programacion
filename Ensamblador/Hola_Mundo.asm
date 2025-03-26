@@ -35,7 +35,7 @@ CODE SEGMENT ;Inicio del segmento de codigo
         INT 21H ; Interrupcion para imprimir el mensaje
         MOV AH, 4CH ; Función para salir del programa
         INT 21H ; Interrupcion para salir
-    Hola_mundo ENDP ;Fin del procedimiento Hola_Mundo
+    Hola_Mundo ENDP ;Fin del procedimiento Hola_Mundo
 CODE ENDS ;Fin del segmento de codigo
 
 END Hola_Mundo ;Fin del programa y punto de entrada
