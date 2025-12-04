@@ -1,2 +1,35 @@
+# Eliminar todos los archivos del índice (pero mantenerlos localmente)
+# git rm -r --cached .
+
+# Volver a agregar todos los archivos (ahora respetando el .gitignore)
+# git add .
+
+# Hacer commit con los cambios
+# git commit -m "Aplicar reglas actualizadas de .gitignore"
+
+
 ### VS Code ###
 .vscode/
+
+### C y C ++ ###
+*.exe
+
+### Cobol ###
+*.exe
+
+### Ensablador ###
+
+### HTML y CSS ###
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+target/
+
+### Python ###
