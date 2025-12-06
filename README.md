@@ -1,1 +1,6 @@
-Este es un espacio donde ralizar retos y ejercicios, en diferentes lenguajes de programación :)
+# Retos de Programación
+
+Repositorio para ejercicios de lógica, resolución de cursos y práctica en diferentes lenguajes de programación.
+
+
+
