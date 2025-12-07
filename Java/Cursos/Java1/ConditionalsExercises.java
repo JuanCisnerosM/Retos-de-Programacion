@@ -114,7 +114,6 @@ public class ConditionalsExercises {
         }
 
         // 10. Usa tres variables a, b, c y muestra cuál es el mayor de las tres.
-        // ! Revisar que esta mal, voya ver el partido XD
         int x = 111;
         int y = 34;
         int z = 33;
