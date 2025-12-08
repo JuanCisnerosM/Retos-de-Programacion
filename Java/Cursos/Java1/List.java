@@ -18,6 +18,9 @@ public class List {
         /**
          * Existen 2 formas de declarar un ArrayList:
          * 
+         * ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>();
+         * var nombreDeVariable = new ArrayList<TipoDeVariable>();
+         * 
          * ArrayList<String> names = new ArrayList<>();      equivale a       var names = new ArrayList<String>();
          * var toma el tipo exacto del lado derecho.
          * Como estás usando new ArrayList<String>(), el compilador infiere que names es de tipo ArrayList<String>.
@@ -28,7 +31,7 @@ public class List {
          */
         var numbers = new ArrayList<Integer>(); // Equivale a   ArrayList<Integer> numbers = new ArrayList<>();
 
-        // * Checar el tamaño de la lista de arrglos (ArrayList)
+        // * Checar el tamaño de la lista de arrglos (ArrayList)  nombreDeVariable.size()
         System.out.println(names.size());
 
         // * Añadir elementos al ArrayList
@@ -37,6 +40,8 @@ public class List {
          * Aqui vamos agregando a placer mas "cajas" para agregar contenido con el " .add("Contenido") "
          * 
          * Son estructuras ordenadas por orden de llegada
+         * 
+         * nombreDeVariable.add("contenido"); // comillas si es de tipo cadena y sin comillas si es numerico
          */
         names.add("John"); // Agrego un objeto de tipo String al ArrayList entonces el tamaño aumento
         names.add("Wizard");
@@ -50,6 +55,10 @@ public class List {
          * Para obtener los elemtenos es diferente que los Arrays, en los cuales usabamoos los [], para acceder a los elementos
          * Aqui se usa el ".get(X)" para obtener el dato del indice X
          * Tambien esta el .getFirst() para obtener el primer elemento , y el .getLast() para obtener el ultimo elemento.
+         * 
+         * nombreDeVariable.get(indice);
+         * nombreDeVariable.getFirst();
+         * nombreDeVariable.getLast();
          */
         System.out.println(names.get(0));
 
@@ -60,6 +69,8 @@ public class List {
         // * Modificar elementos
         /**
          * Para modificar usamoe el "  .set(index, contenido)"
+         * 
+         * nombreDeVariable.set(indice, contenido);
          */
         names.set(0, "Wazaaaa"); // Modificamos el contenido del indice 0
         System.out.println(names.get(0));
@@ -68,6 +79,9 @@ public class List {
         /**
          * En los Arrays no podemos eliminar ya que al usar Arrays debemos estar concientes desde un inicio el tamaño que debe tener el arreglo.
          * Para esto en los ArrayList se usa .remove(indice)
+         * 
+         * nombreDeVariabre.remove(index);
+         * 
          * ! Al eliminar un indice en el medio los que estan a su derecha se recorren,
          * Por ejemplo eliminamos el indice (4), lo que pasa e que el 5 pasaria a ser el 4, el 6 pasaria a ser el 5
          * 
@@ -86,6 +100,9 @@ public class List {
         /**
          * Esto se hace con el .contains("Contenido")
          * Como en el archivo Strings.java, nos va a regregar un true o false
+         * 
+         * nombreDeVariable.contains("Contenido"); // comillas si es de tipo cadena y sin comillas si es numerico
+         * 
          */
         System.out.println(names.contains("Wazaaaa"));
         System.out.println(names.contains("Wizard")); // recueda que lo borramos con remove
@@ -93,6 +110,8 @@ public class List {
         // * Limpiar el ArrayList
         /**
          * Borra todo el contenido por lo que deja el ArrayList vacio, size=0
+         * 
+         * nombreDeVariablre.clear();
          */
         System.out.println(names.size());
         System.out.println(names);
