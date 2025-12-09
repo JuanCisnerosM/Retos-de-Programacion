@@ -5,8 +5,8 @@ public class List {
     public static void main(String[] args) {
         /**
          * * Array vs List  (Arreglos vs Listas)
-         * Un List (ArrayList) una solucion mas flexible que el Array,
-         * Array: tamaño fijo, acceso más rápido, sintaxis simple. No permite crecer o reducir.
+         * ! Un List (ArrayList) una solucion mas flexible que el Array,
+         * ! Array: tamaño fijo, acceso más rápido, sintaxis simple. No permite crecer o reducir.
          * List (java.util.List): tamaño dinámico, más flexible, provee métodos como add(), remove(), contains().
          * Internamente suele ser un ArrayList (respaldo con arreglo), pero con gestión automática de tamaño.
          * Usar Array cuando el tamaño es conocido y no cambia.
@@ -16,7 +16,7 @@ public class List {
         ArrayList<String> names = new ArrayList<>();
 
         /**
-         * Existen 2 formas de declarar un ArrayList:
+         * *Existen 2 formas de declarar un ArrayList (vacio):
          * 
          * ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>();
          * var nombreDeVariable = new ArrayList<TipoDeVariable>();
@@ -28,6 +28,19 @@ public class List {
          * La implenetacion de String es una clase, en java todos los tipos de datos primitivos tienen su equivalente en objeto (clase)
          * 
          * int = Integer
+         * 
+         * * Crear un ArrayList con datos 
+         * 
+         * * ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>(Arrays.asList("dato1", "dato2", "datoX"));
+         * ! importante importar  --  import java.util.Arrays;
+         * ArrayList<String> names3 = new ArrayList<>(Arrays.asList("ASAS", "ASASASD"));
+         * System.out.println(names3);
+         * 
+         * * var nombreDeVariable = new ArrayList<TipoDeVariable>(List.of("dato1", "dato2", "datoX"));
+         * ! importante importar  --  import java.util.List;
+         * var names3 = new ArrayList<String>(List.of("dato1", "dato2", "datoX"));
+         * System.out.println(names3);
+         * 
          */
         var numbers = new ArrayList<Integer>(); // Equivale a   ArrayList<Integer> numbers = new ArrayList<>();
 
