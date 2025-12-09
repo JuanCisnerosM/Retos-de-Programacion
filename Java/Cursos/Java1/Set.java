@@ -17,17 +17,40 @@ public class Set {
          * var nombreDeVariable = new HashSet<TipoDeVariable>()
          * 
          * * Al igual que el ArrayList puedes crea un HashSet con datos
-         *  * Crear un HashSet con datos 
          * 
+         * * Crear un HashSet con datos 
+         * 
+         * * Forma clásica (mutable, compatible con cualquier Java)
          * * HashSet<TipoDeVariable> nombreDeVariable = new HashSet<>(Arrays.asList("dato1", "dato2", "datoX"));
-         * ! importante importar  --  import java.util.Arrays;
+         * ! Requiere importar  --  import java.util.Arrays;
+         * Permite: add, remove
+         * No permite duplicados
          * HashSet<String> names3 = new HashSet<>(Arrays.asList("ASAS", "ASASASD"));
          * System.out.println(names3);
          * 
          * * var nombreDeVariable = new HashSet<TipoDeVariable>(List.of("dato1", "dato2", "datoX"));
-         * ! importante importar  --  import java.util.List;
+         * ! Requiere: importar  --  import java.util.List;
+         * Permite: add, remove
+         * Forma recomendada actualmente
          * var names3 = new HashSet<String>(List.of("dato1", "dato2", "datoX"));
          * System.out.println(names3);
+         * 
+         * ! EXISTE UNA FORMA INMUTABLE
+         * ! PERO ESTA NO LA VAMOS A USAR,
+         * 
+         * Forma solo inmutable (NO permite cambios)
+         * Set<String> set = Set.of("dato1", "dato2", "dato3");
+         * No permite add ni remove
+         * Lanza excepción si hay duplicados
+         * Ideal para constantes
+         * 
+         * 
+         * ---------------------------------------------
+         * 
+         * * Entonces
+         * HashSet NO mantiene orden
+         * NO permite elementos duplicados
+         * Set.of NO acepta valores repetidos
          * 
          */
         HashSet<String> names = new HashSet<>();

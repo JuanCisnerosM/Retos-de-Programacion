@@ -31,15 +31,37 @@ public class List {
          * 
          * * Crear un ArrayList con datos 
          * 
+         * * Forma clásica (mutable, compatible con cualquier Java)
          * * ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>(Arrays.asList("dato1", "dato2", "datoX"));
-         * ! importante importar  --  import java.util.Arrays;
+         * ! Requiere importar  --  import java.util.Arrays;
+         * Permite: add, remove, set
+         * Uso típico en proyectos legacy o Java 8
          * ArrayList<String> names3 = new ArrayList<>(Arrays.asList("ASAS", "ASASASD"));
          * System.out.println(names3);
          * 
+         * * Forma moderna con List.of (Java 9+, mutable al envolver)
          * * var nombreDeVariable = new ArrayList<TipoDeVariable>(List.of("dato1", "dato2", "datoX"));
-         * ! importante importar  --  import java.util.List;
+         * ! Requiere importar  --  import java.util.List;
+         * Permite: add, remove, set
+         * Forma recomendada actualmente
          * var names3 = new ArrayList<String>(List.of("dato1", "dato2", "datoX"));
          * System.out.println(names3);
+         * 
+         * 
+         * ! EXISTE UNA FORMA INMUTABLE
+         * ! PERO ESTA NO LA VAMOS A USAR,
+         * 
+         * List<String> names = List.of("dato1", "dato2", "dato3");
+         * No permite add, remove ni set
+         * Ideal para constantes y catálogos fijos
+         * 
+         * ----------------------------------------------
+         * 
+         * * Entonces
+         * Arrays.asList → lista fija en tamaño
+         * new ArrayList<>(...) → lista totalmente mutable
+         * List.of → lista inmutable por defecto
+         * 
          * 
          */
         var numbers = new ArrayList<Integer>(); // Equivale a   ArrayList<Integer> numbers = new ArrayList<>();

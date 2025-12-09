@@ -12,7 +12,42 @@ public class Maps {
          * var nombreDeVariable = new HashMap<TipoDeVariable, tipoDeVariable>(); 
          * 
          * * Debemos declarar 2 tipos de datos, uno para la clave y otro para el valor
-        */
+         * 
+         * * Al igual que el ArrayList y HashSet puedes crea un HashMap con datos
+         * 
+         * * Forma clásica (mutable, compatible con cualquier Java)
+         * * HashMap<TipoDeVariable, TipoDeVariable> nombreDeVariable = new HashMap<>(Map.of(1, "dato1", 2, "dato2", 3, "dato3"));
+         * ! Requiere: import java.util.Map;
+         * Permite: put, remove, replace
+         * HashMap<Integer, String> names3 = new HashMap<>(Map.of(1, "dato1", 2, "dato2", 3, "dato3"));
+         * System.out.println(names3);
+         * 
+         * * Forma 2 con var
+         * *var nombreDeVariable = new HashMap<TipoDeVariable, tipoDeVariable>(); 
+         * ! Requiere importar import java.util.HashMap; import java.util.Map;
+         * var mapa = new HashMap<Integer, String>(Map.of(1, "A", 2, "B", 3, "C"));
+         * System.out.println(names3);
+         * 
+         * 
+         *         
+         * ! EXISTE UNA FORMA INMUTABLE
+         * ! PERO NO LA VAMOS A VER
+         * 
+         * Forma solo inmutable (NO permite cambios)
+         * Map<Integer, String> mapa = Map.of(1, "dato1", 2, "dato2", 3, "dato3");
+         * No permite put ni remove
+         * Ideal para catálogos fijos
+         * 
+         * 
+         * 
+         * --------------------------------------------
+         * * Entonces
+         * HashMap NO mantiene orden
+         * Las claves NO se repiten
+         * Map.of NO permite claves duplicadas
+         * 
+         * 
+         */
 
         HashMap<String, String> names = new HashMap<>();
         var numbers = new HashMap<Integer, String>();
@@ -113,6 +148,6 @@ public class Maps {
         // * Otras Operaciones
         System.out.println(names.isEmpty()); // Verifica si el HashMap esta vacio, retornando un true o false
         System.out.println(names.values()); // Imprime la coleccion (una lista (por el uso de corchetes)) de solo los valores, mas no la llave [cami@abc.com, hans@correo.com, rukia@abc.com, jonas@correo.com]
-        
+
     }
 }
