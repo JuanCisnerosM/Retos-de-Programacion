@@ -11,8 +11,24 @@ public class Set {
          * ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>();
          * var nombreDeVariable = new ArrayList<TipoDeVariable>();
          * 
+         * El HashSet es:
+         * 
          * HashSet(TipoDeVariable) nombreDeVariable = new HashSet();
          * var nombreDeVariable = new HashSet<TipoDeVariable>()
+         * 
+         * * Al igual que el ArrayList puedes crea un HashSet con datos
+         *  * Crear un HashSet con datos 
+         * 
+         * * HashSet<TipoDeVariable> nombreDeVariable = new HashSet<>(Arrays.asList("dato1", "dato2", "datoX"));
+         * ! importante importar  --  import java.util.Arrays;
+         * HashSet<String> names3 = new HashSet<>(Arrays.asList("ASAS", "ASASASD"));
+         * System.out.println(names3);
+         * 
+         * * var nombreDeVariable = new HashSet<TipoDeVariable>(List.of("dato1", "dato2", "datoX"));
+         * ! importante importar  --  import java.util.List;
+         * var names3 = new HashSet<String>(List.of("dato1", "dato2", "datoX"));
+         * System.out.println(names3);
+         * 
          */
         HashSet<String> names = new HashSet<>();
         var numbers = new HashSet<Integer>();
