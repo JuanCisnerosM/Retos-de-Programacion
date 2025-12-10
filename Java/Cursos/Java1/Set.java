@@ -13,7 +13,7 @@ public class Set {
          * 
          * El HashSet es:
          * 
-         * HashSet(TipoDeVariable) nombreDeVariable = new HashSet();
+         * HashSet<TipoDeVariable> nombreDeVariable = new HashSet();
          * var nombreDeVariable = new HashSet<TipoDeVariable>()
          * 
          * * Al igual que el ArrayList puedes crea un HashSet con datos
