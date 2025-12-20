@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Maps {
-    
+
     public static void main(String[] args) {
 
         // * Declaracion y creacion del HashMap
@@ -151,3 +151,62 @@ public class Maps {
 
     }
 }
+
+/*
+ * =========================================
+ * Declaración de colecciones (forma clásica)
+ * Con y sin datos
+ * =========================================
+ *
+ * ARRAYLIST
+ *
+ * // Sin datos
+ * ArrayList<String> lista = new ArrayList<>();
+ *
+ * // Con datos
+ * ArrayList<String> listaConDatos =
+ *         new ArrayList<>(Arrays.asList("dato1", "dato2", "dato3"));
+ *
+ * Requiere:
+ * import java.util.ArrayList;
+ * import java.util.Arrays;
+ *
+ * -----------------------------------------
+ *
+ * HASHSET
+ *
+ * // Sin datos
+ * HashSet<String> set = new HashSet<>();
+ *
+ * // Con datos
+ * HashSet<String> setConDatos =
+ *         new HashSet<>(Arrays.asList("dato1", "dato2", "dato3"));
+ *
+ * Requiere:
+ * import java.util.HashSet;
+ * import java.util.Arrays;
+ *
+ * -----------------------------------------
+ *
+ * HASHMAP
+ *
+ * // Sin datos
+ * HashMap<Integer, String> map = new HashMap<>();
+ *
+ * // Con datos (excepción moderna aceptada)
+ * HashMap<Integer, String> mapConDatos =
+ *         new HashMap<>(Map.of(1, "dato1", 2, "dato2", 3, "dato3"));
+ *
+ * Requiere:
+ * import java.util.HashMap;
+ * import java.util.Map;
+ *
+ * -----------------------------------------
+ *
+ * Notas:
+ * - Todas las estructuras finales son mutables.
+ * - Arrays.asList() y Map.of() solo se usan como fuente de datos.
+ * - No hay transformación de colecciones, solo copia de elementos.
+ * - HashSet y HashMap no garantizan orden.
+ */
+
