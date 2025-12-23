@@ -1,3 +1,4 @@
+package DataTypesConstantsVariables;
 public class DataTypesExercises {
     
     public static void main(String[] args) {

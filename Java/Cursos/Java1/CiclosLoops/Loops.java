@@ -1,3 +1,4 @@
+package CiclosLoops;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Arrays; // ! importante para crear Estructuras con datos de la forma ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>(Arrays.asList("dato1", "dato2", "datoX"));

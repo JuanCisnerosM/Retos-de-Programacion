@@ -1,3 +1,4 @@
+package Estructuras;
 import java.util.HashMap;
 
 public class Maps {

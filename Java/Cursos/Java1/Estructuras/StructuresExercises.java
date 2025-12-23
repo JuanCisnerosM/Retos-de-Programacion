@@ -1,3 +1,4 @@
+package Estructuras;
 import java.util.ArrayList;
 import java.util.Arrays; // ! importante para crear ArrayList con datos de la formaArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>(Arrays.asList("dato1", "dato2", "datoX"));
 import java.util.HashMap;

@@ -1,3 +1,4 @@
+package CiclosLoops;
 import java.util.ArrayList;
 import java.util.Arrays; // ! ArrayList<TipoDeVariable> nombreDeVariable = new ArrayList<>(Arrays.asList("dato1", "dato2", "datoX"));
 import java.util.HashMap;
