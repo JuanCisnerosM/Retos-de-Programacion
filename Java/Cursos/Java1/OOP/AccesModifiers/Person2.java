@@ -1,4 +1,4 @@
-package OOP;
+package OOP.AccesModifiers;
 
 // Las clases por buena practica siempre son publicas
 public class Person2 {

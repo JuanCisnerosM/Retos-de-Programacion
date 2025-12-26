@@ -1,4 +1,4 @@
-package OOP;
+package OOP.ClassesAndMethods;
 
 public class Rectangle {
     

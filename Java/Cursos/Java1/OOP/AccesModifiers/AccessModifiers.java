@@ -1,4 +1,4 @@
-package OOP;
+package OOP.AccesModifiers;
 
 public class AccessModifiers {
     
