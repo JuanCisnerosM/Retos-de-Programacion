@@ -22,6 +22,9 @@ public class AccessModifiersExercises {
         camara.miProducto();
 
         // 3. Crea una clase BankAccount con el atributo privado balance. Implementa los métodos deposit(double amount) y withdraw(double amount) que validen las cantidades correctamente.
+        BankAccount americanExpress = new BankAccount(0);
+        americanExpress.deposit(20000);
+        americanExpress.withdraw(1500);
     
         // 4. Crea una clase Book con el atributo privado title. Permite leerlo con el método getTitle() pero no modificarlo (sin setTitle()). El título debe asignarse solo por el constructor.
 
