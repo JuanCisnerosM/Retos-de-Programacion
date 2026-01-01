@@ -14,6 +14,12 @@ public class AccessModifiersExercises {
         System.out.println("El nombre de miPersona2 es: " + miPersona2.getName() + " y su edad es: " + miPersona2.getAge());
 
         // 2. Crea una clase Product con el atributo privado price. Añade el método setPrice(double price) que solo permita precios mayores a 0.
+        Product laptop = new Product();
+        laptop.setPrice(99);
+        laptop.miProducto();
+        Product camara = new Product();
+        camara.setPrice(-89);
+        camara.miProducto();
 
         // 3. Crea una clase BankAccount con el atributo privado balance. Implementa los métodos deposit(double amount) y withdraw(double amount) que validen las cantidades correctamente.
     
