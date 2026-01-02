@@ -34,11 +34,13 @@ public class AccessModifiersExercises {
         Temperature miTemperature = new Temperature();
         miTemperature.setCelsius(25);
         miTemperature.mostrarTemperatura();
-        // Con un getter seria algo asi
-        // System.out.println("La temperatura es: " + miTemperature.getCelsius() + " grados celsius");
         
 
         // 6. Crea una clase User con los atributos privados username y password. Implementa los métodos setUsername(String username), setPassword(String password) y checkPassword(String inputPassword) que compare contraseñas.
+        User usuario1 = new User();
+        usuario1.setUsername("ancientAlloy");
+        usuario1.setPassword("myPassword");
+        usuario1.checkPassword("MyPassword");
 
         // 7. Crea una clase Employee con el atributo privado salary. Agrega el método raiseSalary(double percent) que solo permita aumentos positivos.
 
