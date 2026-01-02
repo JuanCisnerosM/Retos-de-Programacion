@@ -35,7 +35,6 @@ public class AccessModifiersExercises {
         miTemperature.setCelsius(25);
         miTemperature.mostrarTemperatura();
         
-
         // 6. Crea una clase User con los atributos privados username y password. Implementa los métodos setUsername(String username), setPassword(String password) y checkPassword(String inputPassword) que compare contraseñas.
         User usuario1 = new User();
         usuario1.setUsername("ancientAlloy");
@@ -54,6 +53,9 @@ public class AccessModifiersExercises {
         miRectangle.calculateArea();
 
         // 9. Crea una clase Student con el atributo privado grade. Agrega los métodos setGrade(int grade) y isPassed() que retorne true si la nota es mayor o igual a 60.
+        Student camila = new Student();
+        camila.setGrade(59);
+        System.out.println(camila.isPassed());
 
         // 10. Crea una clase Car con el atributo privado speed. Agrega los métodos accelerate(int amount) que aumente la velocidad (máximo 120) y brake(int amount) que reduzca la velocidad (mínimo 0).
     }
