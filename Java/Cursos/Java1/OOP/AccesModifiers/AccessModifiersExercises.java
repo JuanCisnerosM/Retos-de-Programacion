@@ -58,5 +58,9 @@ public class AccessModifiersExercises {
         System.out.println(camila.isPassed());
 
         // 10. Crea una clase Car con el atributo privado speed. Agrega los métodos accelerate(int amount) que aumente la velocidad (máximo 120) y brake(int amount) que reduzca la velocidad (mínimo 0).
+        Car miBocho = new Car();
+        miBocho.accelerate(1);
+        miBocho.accelerate(180);
+        miBocho.brake(1);
     }
 }
