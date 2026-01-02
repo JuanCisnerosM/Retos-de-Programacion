@@ -31,6 +31,12 @@ public class AccessModifiersExercises {
         System.out.println(miLibro.getTitle());
 
         // 5. Crea una clase Temperature con el atributo privado celsius. El método setCelsius(double celsius) solo debe aceptar valores entre -100 y 100.
+        Temperature miTemperature = new Temperature();
+        miTemperature.setCelsius(25);
+        miTemperature.mostrarTemperatura();
+        // Con un getter seria algo asi
+        // System.out.println("La temperatura es: " + miTemperature.getCelsius() + " grados celsius");
+        
 
         // 6. Crea una clase User con los atributos privados username y password. Implementa los métodos setUsername(String username), setPassword(String password) y checkPassword(String inputPassword) que compare contraseñas.
 
